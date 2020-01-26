@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>野球の走塁クイズ</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <main>
+    <div class="row">
+      <h1>野球クイズ</h1>
+    </div>   
+    
+    <div class="container">      
+      <h2 id="question_number"></h2>     
+      <p id="question"></p>
+      <ul id="choices"></ul>
+      <p id="answer"></p>
+
+      <!-- 次の問題に進むためのボタン。回答前はボタンを押せない -->
+      <div id="btn" class="disabled">次の問題へ</div>
+
+      <!-- 正答数を表示する領域。最初は隠れた状態にする -->
+      <div id="result" class="hidden">
+        <p></p>
+        <!-- 最初から問題を始める -->
+        <a href="">リトライ</a>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+  </main>
+  <footer>
+    <p>Copyright &copy; shiisuke</p>
+  </footer>
+
+
+</body>
+</html>
