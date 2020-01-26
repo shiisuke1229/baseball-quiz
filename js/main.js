@@ -8,6 +8,7 @@
   const btn = document.getElementById('btn');
   const result = document.getElementById('result');  
   const scoreLabel = document.querySelector('#result > p');
+  const commentLabel = document.getElementById('comment');
   
   // クイズのデータ
   const quizSet = shuffle([
@@ -118,6 +119,15 @@
     // 最後の問題だったら、正答数を表示する
     if (currentNum === quizSet.length - 1) {
       scoreLabel.textContent = `得点: ${score} / ${quizSet.length}`;
+      if (score === 5) {
+        commentLabel.textContent = '完璧です!';
+      } else if (score === 4) {
+        commentLabel.textContent = 'あとちょっと!';
+      } else if (score === 3) {
+        commentLabel.textContent = 'まあまあです';
+      } else {
+        commentLabel.textContent = 'がんばりましょう！';
+      }
       result.classList.remove('hidden');
     } else {
     // 最後の問題でなかったら、次の選択肢を表示する

@@ -159,8 +159,8 @@ footer {
   transform: translateY(-500px);
 }
 
-/* 正解数のスタイル */
-#result > p {
+/* 正解数とコメントのスタイル */
+#result > p, #comment {
   font-size: 24px;
 }
 
