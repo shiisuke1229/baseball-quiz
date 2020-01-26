@@ -1,7 +1,7 @@
 /* 基本の設定
  -------------------------------------------- */
 body {
-  background: #efdec1;
+  background: #e9edef;
   font-size: 16px;
   font-family: Verdana, sans-serif;
 	line-height: 1.7;
@@ -27,18 +27,18 @@ h1,h2 {
 }
 
 main h1 {
-  color: #df6e21;  
+  color: #0061b1;  
 	text-align: center;
 }
 
 /* フッター
  -------------------------------------------- */
 footer {
-	background-color: #687672;
-	color: #dee9eb;
+	background-color: #e9edef;
+	color: #bbcfd4;
 	font-family: "Montserrat",sans-serif;
 	width: 100%;
-  padding: 1em 0;  
+  padding: 5px;  
 	text-align: center;
 }
 
@@ -61,8 +61,7 @@ footer {
   margin: 8px auto;
   background: #fff;
   border-radius: 4px;
-  padding: 16px;
-  /* 絶対配置 */
+  padding: 10px 16px 40px;
   position: relative;
 }
 
@@ -71,22 +70,21 @@ footer {
 /* 問題文のスタイル */
 #question {
   margin-bottom: 16px;
-  font-weight: normal;
 }
 
 /* 選択肢のスタイル */
 #choices {
   list-style: none; /* リストにデフォルトで付いている黒マルなどを外す */
   padding: 0;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
 }
 
 /* 選択肢一つ一つのスタイル */
 #choices > li {
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 8px;
+  margin-bottom: 17px;
   cursor: pointer; 
 }
 
@@ -120,14 +118,21 @@ footer {
   content: ' 　　✖';
 }
 
+#answer {
+  padding: 0;
+  margin-bottom: 25px;
+}
+
 /* 回答後の「次の問題へ」ボタンと「リトライ」ボタンのスタイル */
 #btn, #result > a {
   background: #3498db;
-  padding: 8px;
+  padding: 10px;
+  margin: 50px, 0, 30px;
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
   color: #fff;
+  font-weight: bold;
   box-shadow: 0 4px 0 #2880b9;
 }
 
@@ -142,7 +147,7 @@ footer {
 #result {
   position: absolute;
   width: 300px;
-  background: #fff;
+  background: #fef7f6;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   top: 50px;
@@ -159,15 +164,25 @@ footer {
   transform: translateY(-500px);
 }
 
-/* 正解数とコメントのスタイル */
-#result > p, #comment {
+/* 正解数のスタイル */
+#score {
   font-size: 24px;
+  color: #130d4a;
+  font-weight: bold;
+}
+
+/* コメントのスタイル */
+#comment {
+  font-size: 28px;
+  color: #e73738;
+  font-weight: bold;
 }
 
 /* 「リトライ」ボタンのスタイル */
 #result > a {
   display: block;
   text-decoration: none;
+  margin-bottom: 25px;
 }
 
 /* ----------------------
