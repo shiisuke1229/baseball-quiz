@@ -117,6 +117,7 @@ footer {
 #answer {
   padding: 0;
   margin-bottom: 2.5rem;
+  color: #721c24;
 }
 
 /* 回答後の「次の問題へ」ボタンと「リトライ」ボタンのスタイル */
