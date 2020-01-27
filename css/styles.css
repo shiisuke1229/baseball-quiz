@@ -1,12 +1,8 @@
 /* 基本の設定
  -------------------------------------------- */
-html {
-  font-size: 62.5%
-}
-
 body {
   background: #e9edef;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-family: Verdana, sans-serif;
 	line-height: 2;
 	margin: 0;
@@ -15,9 +11,14 @@ body {
 
 div, header, main, footer { display: block; }
 
-h1,h2 {
+h1 {
+  font-size: 36px;
   font-family: Verdana, sans-serif;
+}
 
+h2 {
+  font-size: 24px;
+  font-family: Verdana, sans-serif;
 }
 
 /* メインエリア
@@ -26,7 +27,7 @@ h1,h2 {
 	width: 100%;
 	max-width: 930px;
 	margin: 0 auto;
-	padding: 1rem 0 5rem;
+	padding: 10px 0 5px;
 	color: #114046;
 }
 
@@ -42,7 +43,7 @@ footer {
 	color: #bbcfd4;
 	font-family: "Montserrat",sans-serif;
 	width: 100%;
-  padding: 0.5rem;  
+  padding: 5px;  
 	text-align: center;
 }
 
@@ -51,36 +52,43 @@ footer {
  -------------------------------------------- */
 .row {
 	max-width: 930px;
-	margin: 0 auto 2.5rem;
+	margin: 0 auto 25px;
 }
+
+
 
 .container {
   max-width: 930px;
-  margin: 0.8rem auto;
+  margin: 8px auto;
   background: #fff;
-  border-radius: 0.4rem;
-  padding: 1rem 2rem 4rem;
+  border-radius: 4px;
+  padding: 10px 20px 40px;
   position: relative;
+}
+
+#image > img{
+  width: 352px;
+  height: 216px;
 }
 
 /* 問題文のスタイル */
 #question {
-  margin-bottom: 1.6rem;
+  margin-bottom: 16px;
 }
 
 /* 選択肢のスタイル */
 #choices {
   list-style: none; /* リストにデフォルトで付いている黒マルなどを外す */
   padding: 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 25px;
 }
 
 /* 選択肢一つ一つのスタイル */
 #choices > li {
-  border: 0.1rem solid #ccc;
-  border-radius: 0.4rem;
-  padding: 0.8rem;
-  margin-bottom: 1.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 17px;
   cursor: pointer; 
 }
 
@@ -116,42 +124,42 @@ footer {
 
 #answer {
   padding: 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 25px;
   color: #721c24;
 }
 
 /* 回答後の「次の問題へ」ボタンと「リトライ」ボタンのスタイル */
 #btn, #result > a {
   background: #3498db;
-  padding: 1rem;
-  margin: 5rem, 0, 3rem;
-  border-radius: 0.4rem;
+  padding: 10px;
+  margin: 50px, 0, 30px;
+  border-radius: 0.40px;
   cursor: pointer;
   text-align: center;
   color: #fff;
   font-weight: bold;
-  box-shadow: 0 0.4rem 0 #2880b9;
+  box-shadow: 0 4px 0 #2880b9;
 }
 
 /* 回答前の「次の問題へ」ボタンのスタイル */
 #btn.disabled {
   background:#ccc;
-  box-shadow: 0 0.4rem 0 #bbb;
+  box-shadow: 0 4px 0 #bbb;
   opacity: 0.7;
 }
 
 /* 正解数を表示する領域のスタイル */
 #result {
   position: absolute;
-  width: 30rem;
+  width: 300px;
   background: #fef7f6;
-  padding: 3rem;
-  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
-  top: 0.5rem;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  top: 5px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  border-radius: 0.4rem;
+  border-radius: 4px;
   text-align: center;
   transition: 0.4s;
 }
@@ -163,14 +171,14 @@ footer {
 
 /* 正解数のスタイル */
 #score {
-  font-size: 2.4rem;
+  font-size: 24px;
   color: #130d4a;
   font-weight: bold;
 }
 
 /* コメントのスタイル */
 #comment {
-  font-size: 2.8rem;
+  font-size: 28px;
   color: #e73738;
   font-weight: bold;
 }
@@ -179,19 +187,39 @@ footer {
 #result > a {
   display: block;
   text-decoration: none;
-  margin-bottom: 2.5rem;
+  margin-bottom: 25px;
 }
 
 /* ----------------------
  画面の横幅が599px以下の場合に適用（スマホ用）
  ---------------------- */
- @media screen and (max-width: 599px) {
+ @media screen and (max-width: 599px) { 
+  
+  body {
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #image > img {
+    max-width: 352px;
+    max-height: 216px;
+    width: 100vw;
+    padding: 0 8px;
+  }
+
 	.container {
 		margin-left: 0; 
 		width: auto; 
 	}
 	.row, #question, #choices, #answer, #btn, #btn.disabled, #result, #result.hidden, #score, #comment {
-		padding: 0 0.8rem; 
+		padding: 0 8px; 
 	}
 }
 
