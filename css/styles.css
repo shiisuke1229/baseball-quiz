@@ -4,12 +4,14 @@ body {
   background: #e9edef;
   font-size: 16px;
   font-family: Verdana, sans-serif;
-	line-height: 2;
-	margin: 0;
-	padding: 0;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
 }
 
-div, header, main, footer { display: block; }
+div, header, main, footer { 
+  display: block; 
+}
 
 h1 {
   font-size: 36px;
@@ -23,36 +25,36 @@ h2 {
 
 /* メインエリア
  -------------------------------------------- */
- main {
-	width: 100%;
-	max-width: 930px;
-	margin: 0 auto;
-	padding: 10px 0 5px;
-	color: #114046;
+main {
+  width: 100%;
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 10px 0 5px;
+  color: #114046;
 }
 
 main h1 {
   color: #0061b1;  
-	text-align: center;
+  text-align: center;
 }
 
 /* フッター
  -------------------------------------------- */
 footer {
-	background-color: #e9edef;
-	color: #bbcfd4;
-	font-family: "Montserrat",sans-serif;
-	width: 100%;
+  background-color: #e9edef;
+  color: #bbcfd4;
+  font-family: "Montserrat",sans-serif;
+  width: 100%;
   padding: 5px;  
-	text-align: center;
+  text-align: center;
 }
 
 
 /* カラムの設定
  -------------------------------------------- */
 .row {
-	max-width: 930px;
-	margin: 0 auto 25px;
+  max-width: 930px;
+  margin: 0 auto 25px;
 }
 
 
@@ -69,6 +71,7 @@ footer {
 #image > img{
   width: 352px;
   height: 216px;
+  padding: 0 30px;
 }
 
 /* 問題文のスタイル */
@@ -148,14 +151,14 @@ footer {
   opacity: 0.7;
 }
 
-/* 正解数を表示する領域のスタイル */
+/* 正答数を表示する領域のスタイル */
 #result {
   position: absolute;
   width: 300px;
-  background: #fef7f6;
+  background: #f0fff0;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  top: 5px;
+  top: 100px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -164,23 +167,25 @@ footer {
   transition: 0.4s;
 }
 
-/* 正解数の表示を画面外に置いておく */
+/* 正答数を表示する領域を画面外に置いておく */
 #result.hidden {
   transform: translateY(-500px);
 }
 
-/* 正解数のスタイル */
+/* 正答数のスタイル */
 #score {
   font-size: 24px;
   color: #130d4a;
   font-weight: bold;
+  margin: 0 0 10px;
 }
 
 /* コメントのスタイル */
 #comment {
-  font-size: 28px;
+  font-size: 34px;
   color: #e73738;
   font-weight: bold;
+  margin: 0 0 20px;
 }
 
 /* 「リトライ」ボタンのスタイル */
@@ -211,16 +216,15 @@ footer {
     max-width: 352px;
     max-height: 216px;
     width: 100vw;
-    padding: 0 8px;
   }
 
-	.container {
-		margin-left: 0; 
-		width: auto; 
-	}
-	.row, #question, #choices, #answer, #btn, #btn.disabled, #result, #result.hidden, #score, #comment {
-		padding: 0 8px; 
-	}
+  .container {
+    margin-left: 0; 
+    width: auto; 
+  }
+  .row, #question_number, #question, #choices, #answer, #btn, #btn.disabled, #result, #result.hidden, #score, #comment {
+    padding: 0 8px; 
+  }
 }
 
 
