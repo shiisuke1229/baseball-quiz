@@ -71,7 +71,8 @@ footer {
 #image > img{
   width: 352px;
   height: 216px;
-  padding: 0 30px;
+  margin: 8px auto;
+  padding: 0 20px;
 }
 
 /* 問題文のスタイル */
@@ -215,7 +216,8 @@ footer {
   #image > img {
     max-width: 352px;
     max-height: 216px;
-    width: 100vw;
+    width: 80vw;
+    padding: 0 15px;
   }
 
   .container {
