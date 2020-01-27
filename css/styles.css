@@ -57,8 +57,6 @@ footer {
   margin: 0 auto 25px;
 }
 
-
-
 .container {
   max-width: 930px;
   margin: 8px auto;
@@ -178,7 +176,7 @@ footer {
   font-size: 24px;
   color: #130d4a;
   font-weight: bold;
-  margin: 0 0 10px;
+  margin: 15px 0 10px;
 }
 
 /* コメントのスタイル */
